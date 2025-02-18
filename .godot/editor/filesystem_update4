@@ -1,6 +1,3 @@
 res://UI/Main.tscn
 res://UI/main_menu.tscn
 res://Assets/Themes/main_theme.tres
-res://UI/main_menu.gd
-res://UI/main.gd
-res://Global/scene_manager.gd
