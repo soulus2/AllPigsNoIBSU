@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ut3jn0rah5yo"]
+
+[ext_resource type="FontFile" uid="uid://c1xu7ggpg3ug8" path="res://Assets/Fonts/Lilex/LilexNerdFontMono-Bold.ttf" id="1_miweb"]
+
+[resource]
+Button/font_sizes/font_size = 36
+Button/fonts/font = ExtResource("1_miweb")
+VBoxContainer/constants/separation = 61
