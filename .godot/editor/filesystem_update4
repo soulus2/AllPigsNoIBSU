@@ -1,3 +1,9 @@
+res://UI/header.tscn
+res://UI/navbar.tscn
 res://UI/Main.tscn
-res://UI/main_menu.tscn
+res://UI/main.gd
+res://UI/game_test.tscn
+res://UI/game_test.gd
 res://Assets/Themes/main_theme.tres
+res://Global/scene_manager.gd
+res://UI/main_menu.tscn

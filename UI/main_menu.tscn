@@ -20,26 +20,28 @@ color = Color(0.240663, 0.251637, 0.419351, 1)
 
 [node name="Button_container" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_top = 192.0
 offset_right = 540.0
-offset_bottom = 768.0
+offset_bottom = 960.0
 theme = ExtResource("1_o4euo")
 alignment = 1
 
 [node name="Start" type="Button" parent="Button_container"]
 layout_mode = 2
+focus_mode = 0
 theme = ExtResource("1_o4euo")
 text = "Start"
 flat = true
 
 [node name="Options" type="Button" parent="Button_container"]
 layout_mode = 2
+focus_mode = 0
 theme = ExtResource("1_o4euo")
 text = "Options"
 flat = true
 
 [node name="Quit" type="Button" parent="Button_container"]
 layout_mode = 2
+focus_mode = 0
 theme = ExtResource("1_o4euo")
 text = "Quit"
 flat = true

@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjq5cq43ldope"]
+
+[ext_resource type="Theme" uid="uid://ut3jn0rah5yo" path="res://Assets/Themes/main_theme.tres" id="1_gekmn"]
+
+[node name="Navbar" type="Control" groups=["navbar"]]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -875.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = -85.0
+offset_right = 540.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_top = -85.0
+offset_right = 540.0
+theme = ExtResource("1_gekmn")
+alignment = 1
+
+[node name="Home" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = " "
+flat = true
+
+[node name="Shop" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = " "
+flat = true
+
+[node name="money" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_gekmn")
+theme_override_constants/separation = 20
+
+[node name="curency" type="Label" parent="HBoxContainer/money"]
+layout_mode = 2
+theme = ExtResource("1_gekmn")
+text = "
+"
+
+[node name="amount" type="Label" parent="HBoxContainer/money"]
+layout_mode = 2
+text = "5000"
+
+[node name="Squirrles" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = " "
+flat = true
+
+[node name="Menu" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+text = " "
+flat = true

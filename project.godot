@@ -18,18 +18,23 @@ config/icon="res://icon.svg"
 [autoload]
 
 SceneManager="*res://Global/scene_manager.gd"
+GlobalEventListener="*res://Global/global_event_listener.gd"
 
 [display]
 
 window/size/viewport_width=540
 window/size/viewport_height=960
+window/stretch/mode="viewport"
 window/stretch/aspect="keep_width"
 window/handheld/orientation=1
 
 [global_group]
 
 main_menu="group for control nodes that have start, options and quit buttons"
+navbar="nodes with singnals simular to navbar "
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
