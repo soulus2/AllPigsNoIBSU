@@ -8,3 +8,12 @@ anchors_preset = 0
 offset_right = 540.0
 offset_bottom = 960.0
 script = ExtResource("1_bqset")
+
+[node name="Squirrels" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Spawn_timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Spawn_timer" to="." method="_on_spawn_timer_timeout"]

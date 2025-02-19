@@ -1,5 +1,6 @@
 extends Control
 
+@export_category("Scenes")
 @export var main_menu_scene:PackedScene = preload("res://UI/main_menu.tscn") 
 @export var game_scene:PackedScene = preload("res://UI/game_test.tscn")
 @export var navbar_scene:PackedScene = preload("res://UI/navbar.tscn")
