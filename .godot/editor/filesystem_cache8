@@ -1,10 +1,10 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1739975101
+::res://::1739984639
 export_presets.cfg::TextFile::-1::1739974584::0::1::::<><>::
 icon.svg::CompressedTexture2D::8719925686234060289::1739856991::1739857017::1::::<><>::
 node_2d.gd::GDScript::-1::1739857580::0::1::::<>Node2D<>::
 README.md::TextFile::-1::1739856991::0::1::::<><>::
-squirrel.tscn::PackedScene::4715698557675827084::1739975086::0::1::::<><>::res://Entities/squirrel.gd<>uid://cmyyiwmtj4mvr::::res://Assets/Entities/squirrle_test.png
+test_2d.tscn::PackedScene::8176406319859018925::1739984464::0::1::::<><>::uid://b8gk4pn8pg3im::::res://Entities/squirrel.tscn
 ::res://Addons/::1739857449
 ::res://Assets/::1739974584
 ::res://Assets/Entities/::1739974597
@@ -23,19 +23,19 @@ OIIA OIIA Meme Cat (Luca-Dante Spadafora x Noisetime) [TechnoRawstyle Remix].mp3
 ::res://Assets/Themes/::1739974584
 main_theme.tres::Theme::1444716920226763598::1739974584::0::1::::<><>::uid://dy08e2xxhwbf3::::res://Assets/Fonts/DepartureMonoNerdFont-Regular.otf
 ::res://Assets/UI/::1739857449
-::res://Entities/::1739975077
-squirel.tscn::PackedScene::1144345328020622868::1739974439::0::1::::<><>::res://node_2d.gd<>uid://dwh85w1m27du4::::res://icon.svg
-squirrel.gd::GDScript::-1::1739975077::0::1::::<>Node2D<>::
+::res://Entities/::1739984429
+squirrel.gd::GDScript::-1::1739984374::0::1::::<>Node2D<>::
+squirrel.tscn::PackedScene::4715698557675827084::1739984429::0::1::::<><>::res://Entities/squirrel.gd<>uid://cmyyiwmtj4mvr::::res://Assets/Entities/squirrle_test.png<>uid://dwh85w1m27du4::::res://icon.svg
 ::res://Extras/::1739857449
 ::res://Global/::1739974584
 global_event_listener.gd::GDScript::-1::1739974584::0::1::::<>Node<>::
 scene_manager.gd::GDScript::-1::1739974584::0::1::::<>Node<>::
 ::res://Objects/::1739975101
-::res://UI/::1739974950
+::res://UI/::1739984429
 game_test.gd::GDScript::-1::1739974584::0::1::::<>Control<>::
-game_test.tscn::PackedScene::6205766245145871078::1739974950::0::1::::<><>::res://UI/game_test.gd<>uid://dtlf2jd1mgcgi::::res://Assets/Sounds/Music/OIIA OIIA Meme Cat (Luca-Dante Spadafora x Noisetime) [TechnoRawstyle Remix].mp3<>uid://cxvwm5oiu2gdm::::res://Assets/Model/SquirrelWork.obj
+game_test.tscn::PackedScene::6205766245145871078::1739984429::0::1::::<><>::res://UI/game_test.gd<>uid://dtlf2jd1mgcgi::::res://Assets/Sounds/Music/OIIA OIIA Meme Cat (Luca-Dante Spadafora x Noisetime) [TechnoRawstyle Remix].mp3<>uid://cxvwm5oiu2gdm::::res://Assets/Model/SquirrelWork.obj
 main.gd::GDScript::-1::1739974584::0::1::::<>Control<>::
-Main.tscn::PackedScene::2968581102778218634::1739974950::0::1::::<><>::res://UI/main.gd
+Main.tscn::PackedScene::2968581102778218634::1739984429::0::1::::<><>::res://UI/main.gd
 main_menu.gd::GDScript::-1::1739974584::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::8065880091071224737::1739974950::0::1::::<><>::uid://ut3jn0rah5yo::::res://Assets/Themes/main_theme.tres<>res://UI/main_menu.gd
+main_menu.tscn::PackedScene::8065880091071224737::1739984429::0::1::::<><>::uid://ut3jn0rah5yo::::res://Assets/Themes/main_theme.tres<>res://UI/main_menu.gd
 navbar.tscn::PackedScene::3052976288331109186::1739974584::0::1::::<><>::uid://ut3jn0rah5yo::::res://Assets/Themes/main_theme.tres
