@@ -1,5 +1,5 @@
-res://Assets/Themes/main_theme.tres::50fefde3aa18de9d32b458a9d7ecc944::1739960685::res://.godot/exported/133200997/export-f6c89aacd5927e73ba29d48ba586d95e-main_theme.res
-res://UI/game_test.tscn::32371072615fffd9d360acc7b624c53f::1739961044::res://.godot/exported/133200997/export-eff56be3353248936e9556ab340c10d4-game_test.scn
-res://UI/header.tscn::3b711766ba364d2c36dd72f07bd6ce26::1739961044::res://.godot/exported/133200997/export-6eafa68eb63d27c34f8948212aa37a2c-header.scn
-res://UI/Main.tscn::b171f1590bf5e13bcbc90548d9482bee::1739961044::res://.godot/exported/133200997/export-097f3b2c7b2e84882005c6d8c166732a-Main.scn
-res://UI/main_menu.tscn::edcd5b9bdde8d30abdd17a4506298a29::1739961044::res://.godot/exported/133200997/export-2138ba4767b07f21f5de407b42dc4973-main_menu.scn
+res://Assets/Themes/main_theme.tres::2f41c5b111f33ba431f5d960e6cf3d03::1739969327::res://.godot/exported/133200997/export-f6c89aacd5927e73ba29d48ba586d95e-main_theme.res
+res://UI/game_test.tscn::b98402e711657283b1b86c921a04bb91::1739969951::res://.godot/exported/133200997/export-eff56be3353248936e9556ab340c10d4-game_test.scn
+res://UI/Main.tscn::b171f1590bf5e13bcbc90548d9482bee::1739969951::res://.godot/exported/133200997/export-097f3b2c7b2e84882005c6d8c166732a-Main.scn
+res://UI/main_menu.tscn::43006f3dedd86ce5c263023e41198901::1739969951::res://.godot/exported/133200997/export-2138ba4767b07f21f5de407b42dc4973-main_menu.scn
+res://UI/navbar.tscn::031760e2506c8db33c599e0cb4e12110::1739969951::res://.godot/exported/133200997/export-694d46b84887126a2166e35154ee723d-navbar.scn

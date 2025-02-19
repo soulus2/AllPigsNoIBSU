@@ -24,6 +24,11 @@ driver/emulate_touch_from_mouse=false
 SceneManager="*res://Global/scene_manager.gd"
 GlobalEventListener="*res://Global/global_event_listener.gd"
 
+[debug]
+
+gdscript/warnings/unused_parameter=0
+gdscript/warnings/unused_signal=0
+
 [display]
 
 window/size/viewport_width=540

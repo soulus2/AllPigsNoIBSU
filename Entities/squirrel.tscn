@@ -8,6 +8,7 @@
 size = Vector2(88, 111)
 
 [node name="Squirrel" type="Node2D"]
+y_sort_enabled = true
 script = ExtResource("1_7tehb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
