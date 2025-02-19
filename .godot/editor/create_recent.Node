@@ -1,3 +1,5 @@
+Timer
+Control
 Button
 Label
 TouchScreenButton
@@ -6,7 +8,6 @@ Area2D
 Sprite2D
 Node2D
 CharacterBody2D
-Control
 HBoxContainer
 VBoxContainer
 ColorRect

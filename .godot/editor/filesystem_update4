@@ -1,3 +1,8 @@
 res://UI/Main.tscn
 res://Entities/squirrel.tscn
 res://test_2d.tscn
+res://UI/game_test.tscn
+res://UI/game_test.gd
+res://UI/main.gd
+res://UI/main_menu.gd
+res://UI/navbar.tscn
