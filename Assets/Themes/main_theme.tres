@@ -1,13 +1,33 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://ut3jn0rah5yo"]
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://ut3jn0rah5yo"]
 
 [ext_resource type="FontFile" uid="uid://dy08e2xxhwbf3" path="res://Assets/Fonts/DepartureMonoNerdFont-Regular.otf" id="1_2rvqf"]
+[ext_resource type="Texture2D" uid="uid://b8aywp3xj2mis" path="res://Assets/UI/panel.svg" id="2_18v43"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_seksx"]
+texture = ExtResource("2_18v43")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nlhlj"]
 
 [resource]
-Button/constants/outline_size = 8
+Button/colors/font_color = Color(1, 1, 1, 1)
 Button/font_sizes/font_size = 45
 Button/fonts/font = ExtResource("1_2rvqf")
 HBoxContainer/constants/separation = 31
 Label/constants/outline_size = 8
 Label/font_sizes/font_size = 37
 Label/fonts/font = ExtResource("1_2rvqf")
+MarginContainer/constants/margin_bottom = 200
+MarginContainer/constants/margin_left = 100
+MarginContainer/constants/margin_right = 100
+MarginContainer/constants/margin_top = 200
+Panel/styles/panel = SubResource("StyleBoxTexture_seksx")
 VBoxContainer/constants/separation = 61
+VScrollBar/styles/grabber = SubResource("StyleBoxEmpty_nlhlj")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxEmpty_nlhlj")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxEmpty_nlhlj")
+VScrollBar/styles/scroll = SubResource("StyleBoxEmpty_nlhlj")
+VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_nlhlj")

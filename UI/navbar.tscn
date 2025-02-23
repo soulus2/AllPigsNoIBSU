@@ -1,63 +1,94 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjq5cq43ldope"]
+[gd_scene load_steps=6 format=3 uid="uid://bjq5cq43ldope"]
 
+[ext_resource type="PackedScene" uid="uid://b63wfhl3jx7u3" path="res://UI/screen_conteiner.tscn" id="1_agia4"]
 [ext_resource type="Theme" uid="uid://ut3jn0rah5yo" path="res://Assets/Themes/main_theme.tres" id="1_gekmn"]
+[ext_resource type="Script" path="res://UI/navbar.gd" id="1_sg384"]
+[ext_resource type="PackedScene" uid="uid://cun4ud2usxsm2" path="res://UI/background.tscn" id="3_yhrax"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kjero"]
+bg_color = Color(0.152941, 0.478431, 0.937255, 1)
 
 [node name="Navbar" type="Control" groups=["navbar"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_bottom = -875.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_sg384")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_top = -85.0
-offset_right = 540.0
+[node name="Background_color" parent="." node_paths=PackedStringArray("foreground_node") instance=ExtResource("3_yhrax")]
+layout_mode = 2
+offset_top = 836.0
+offset_right = 1957.0
+offset_bottom = 902.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kjero")
+foreground_node = NodePath("../Screen_container/VBoxContainer/HBoxContainer")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="Screen_container" parent="." instance=ExtResource("1_agia4")]
 layout_mode = 0
-offset_top = -85.0
-offset_right = 540.0
+offset_right = 1957.0
+offset_bottom = 902.0
+include_internal = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen_container"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Screen_container/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
 theme = ExtResource("1_gekmn")
 alignment = 1
 
-[node name="Home" type="Button" parent="HBoxContainer"]
+[node name="Home" type="Button" parent="Screen_container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 focus_mode = 0
+theme = ExtResource("1_gekmn")
 text = " "
 flat = true
 
-[node name="Shop" type="Button" parent="HBoxContainer"]
+[node name="Shop" type="Button" parent="Screen_container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 focus_mode = 0
+theme = ExtResource("1_gekmn")
 text = " "
 flat = true
 
-[node name="money" type="HBoxContainer" parent="HBoxContainer"]
+[node name="money" type="HBoxContainer" parent="Screen_container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_gekmn")
 theme_override_constants/separation = 20
 
-[node name="curency" type="Label" parent="HBoxContainer/money"]
+[node name="curency" type="Label" parent="Screen_container/VBoxContainer/HBoxContainer/money"]
 layout_mode = 2
 theme = ExtResource("1_gekmn")
 text = "
 "
 
-[node name="amount" type="Label" parent="HBoxContainer/money"]
+[node name="amount" type="Label" parent="Screen_container/VBoxContainer/HBoxContainer/money"]
 layout_mode = 2
 text = "5000"
 
-[node name="Squirrles" type="Button" parent="HBoxContainer"]
+[node name="Squirrles" type="Button" parent="Screen_container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 focus_mode = 0
+theme = ExtResource("1_gekmn")
 text = " "
 flat = true
 
-[node name="Menu" type="Button" parent="HBoxContainer"]
+[node name="Menu" type="Button" parent="Screen_container/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 focus_mode = 0
+theme = ExtResource("1_gekmn")
 text = " "
 flat = true
+
+[connection signal="pressed" from="Screen_container/VBoxContainer/HBoxContainer/Home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="Screen_container/VBoxContainer/HBoxContainer/Shop" to="." method="_on_shop_pressed"]
+[connection signal="pressed" from="Screen_container/VBoxContainer/HBoxContainer/Squirrles" to="." method="_on_squirrles_pressed"]
+[connection signal="pressed" from="Screen_container/VBoxContainer/HBoxContainer/Menu" to="." method="_on_menu_pressed"]

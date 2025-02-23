@@ -1,8 +1,13 @@
+res://UI/main_menu.tscn
+res://Assets/Themes/main_theme.tres
+res://UI/screen_conteiner.gd
+res://UI/navbar.tscn
 res://UI/Main.tscn
 res://Entities/squirrel.tscn
-res://test_2d.tscn
 res://UI/game_test.tscn
+res://UI/squirrles_starts.tscn
+res://UI/background.tscn
+res://Global/Global_stats.gd
 res://UI/game_test.gd
-res://UI/main.gd
-res://UI/main_menu.gd
-res://UI/navbar.tscn
+res://Entities/squirrel.gd
+res://UI/squirrles_starts.gd

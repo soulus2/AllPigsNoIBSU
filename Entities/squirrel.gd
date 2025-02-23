@@ -1,7 +1,11 @@
 extends Node2D
 
+
 var isDragging:bool=false
 @export var evolutionLevel:int=0
+
+
+
 #this function does not work for now
 func checkEvolutionCompatability(node:Node2D) -> bool: 
 	return node.evolutionLevel == evolutionLevel 
@@ -17,12 +21,28 @@ func checkCollision()->void:
 			nearestArea = {area = area, distance = currentDistance}
 	
 	if nearestArea.area != null:
+		
+		#<><><>Added By Soulus<><><>
+		GlobalStats.evolutions_amount[evolutionLevel]-=2
+		GlobalStats.evolutions_amount[evolutionLevel+1]+=1
+		GlobalStats.total_squirrle_amout-=1
+		#<><><><><><><><><><><><><><
+		
 		evolutionLevel+=1
+		
+		#<><><>Added By Soulus<><><>
+		GlobalStats.temp_evolution=evolutionLevel
+		#<><><><><><><><><><><><><><
+		
 		changeLabelText(evolutionLevel)
 		nearestArea.area.get_parent().queue_free()
 
 func _ready() -> void:
+	#<><><>Added By Soulus<><><>
 	changeLabelText(evolutionLevel)
+	#<><><><><><><><><><><><><><
+	GlobalStats.total_squirrle_amout+=1
+	GlobalStats.evolutions_amount[evolutionLevel]+=1
 
 func changeLabelText(text:int)->void:
 	$Label.text = "Evolution Level %d" % text
