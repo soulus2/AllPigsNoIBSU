@@ -23,6 +23,7 @@ driver/emulate_touch_from_mouse=false
 
 SceneManager="*res://Global/scene_manager.gd"
 GlobalEventListener="*res://Global/global_event_listener.gd"
+GlobalStats="*res://Global/Global_stats.gd"
 
 [debug]
 
@@ -32,7 +33,7 @@ gdscript/warnings/unused_signal=0
 [display]
 
 window/size/viewport_width=540
-window/size/viewport_height=960
+window/size/viewport_height=1200
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_width"
 window/handheld/orientation=1

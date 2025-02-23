@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b63wfhl3jx7u3"]
+
+[ext_resource type="Script" path="res://UI/screen_conteiner.gd" id="1_a6rif"]
+
+[node name="Screen_conteiner" type="Container"]
+offset_right = 1998.0
+offset_bottom = 1204.0
+mouse_filter = 2
+script = ExtResource("1_a6rif")
+include_internal = null

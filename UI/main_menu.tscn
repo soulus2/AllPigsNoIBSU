@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://dm6f4p4hdyvyn"]
+[gd_scene load_steps=5 format=3 uid="uid://dm6f4p4hdyvyn"]
 
 [ext_resource type="Theme" uid="uid://ut3jn0rah5yo" path="res://Assets/Themes/main_theme.tres" id="1_o4euo"]
 [ext_resource type="Script" path="res://UI/main_menu.gd" id="1_xxdcw"]
+[ext_resource type="PackedScene" uid="uid://b63wfhl3jx7u3" path="res://UI/screen_conteiner.tscn" id="2_vsok1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1wahj"]
+bg_color = Color(0.153809, 0.478306, 0.9375, 1)
 
 [node name="Main_Menu" type="Control" groups=["main_menu"]]
 layout_mode = 3
@@ -12,40 +16,35 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xxdcw")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="Screen_conteiner" parent="." instance=ExtResource("2_vsok1")]
 layout_mode = 0
-offset_right = 540.0
-offset_bottom = 960.0
-color = Color(0.240663, 0.251637, 0.419351, 1)
+offset_right = 1957.0
+offset_bottom = 902.0
+include_internal = false
 
-[node name="Button_container" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 540.0
-offset_bottom = 960.0
+[node name="Panel" type="Panel" parent="Screen_conteiner"]
+layout_mode = 2
+theme = ExtResource("1_o4euo")
+theme_override_styles/panel = SubResource("StyleBoxFlat_1wahj")
+
+[node name="Button_container" type="VBoxContainer" parent="Screen_conteiner"]
+layout_mode = 2
 theme = ExtResource("1_o4euo")
 alignment = 1
 
-[node name="Start" type="Button" parent="Button_container"]
+[node name="Start" type="Button" parent="Screen_conteiner/Button_container"]
 layout_mode = 2
 focus_mode = 0
 theme = ExtResource("1_o4euo")
 text = "Start"
 flat = true
 
-[node name="Options" type="Button" parent="Button_container"]
-layout_mode = 2
-focus_mode = 0
-theme = ExtResource("1_o4euo")
-text = "Options"
-flat = true
-
-[node name="Quit" type="Button" parent="Button_container"]
+[node name="Quit" type="Button" parent="Screen_conteiner/Button_container"]
 layout_mode = 2
 focus_mode = 0
 theme = ExtResource("1_o4euo")
 text = "Quit"
 flat = true
 
-[connection signal="pressed" from="Button_container/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="Button_container/Options" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="Button_container/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Screen_conteiner/Button_container/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Screen_conteiner/Button_container/Quit" to="." method="_on_quit_pressed"]
