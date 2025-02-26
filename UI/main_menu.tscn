@@ -18,8 +18,8 @@ script = ExtResource("1_xxdcw")
 
 [node name="Screen_conteiner" parent="." instance=ExtResource("2_vsok1")]
 layout_mode = 0
-offset_right = 1957.0
-offset_bottom = 902.0
+offset_right = 1317.0
+offset_bottom = 632.0
 include_internal = false
 
 [node name="Panel" type="Panel" parent="Screen_conteiner"]

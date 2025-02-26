@@ -18,8 +18,8 @@ script = ExtResource("1_qsswf")
 
 [node name="Screen_conteiner" parent="." instance=ExtResource("1_h2bxr")]
 layout_mode = 0
-offset_right = 1957.0
-offset_bottom = 653.0
+offset_right = 1317.0
+offset_bottom = 632.0
 include_internal = false
 
 [node name="background" type="Button" parent="Screen_conteiner"]

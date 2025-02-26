@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8gk4pn8pg3im"]
+[gd_scene load_steps=4 format=3 uid="uid://b8gk4pn8pg3im"]
 
 [ext_resource type="Script" path="res://Entities/squirrel.gd" id="1_7tehb"]
 [ext_resource type="Texture2D" uid="uid://cmyyiwmtj4mvr" path="res://Assets/Entities/squirrle_test.png" id="1_ry3o4"]
-[ext_resource type="Texture2D" uid="uid://dwh85w1m27du4" path="res://icon.svg" id="2_wcm23"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cglru"]
 size = Vector2(88, 111)
@@ -18,12 +17,6 @@ texture = ExtResource("1_ry3o4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_cglru")
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
-modulate = Color(1, 1, 1, 0)
-position = Vector2(-40, -36)
-scale = Vector2(0.632812, 0.734375)
-texture_normal = ExtResource("2_wcm23")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -33.0
