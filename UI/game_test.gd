@@ -18,7 +18,7 @@ func _ready() -> void:
 
 func squirrel_setup(squirrel:Node2D):
 	squirrel.position = Vector2(randi_range(100,get_viewport_rect().size.x-100), randi_range(100,get_viewport_rect().size.y-100))
-	
+
 func _on_spawn_timer_timeout() -> void:
 	SceneManager.load_scene($Squirrels,squirrel_scene,squirrel_setup)
 	spawn_timer.wait_time =randf_range(min_time,max_time)
