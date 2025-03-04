@@ -1,42 +1,89 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8gk4pn8pg3im"]
+[gd_scene load_steps=8 format=3 uid="uid://b8gk4pn8pg3im"]
 
 [ext_resource type="Script" path="res://Entities/squirrel.gd" id="1_7tehb"]
-[ext_resource type="Texture2D" uid="uid://cmyyiwmtj4mvr" path="res://Assets/Entities/squirrle_test.png" id="1_ry3o4"]
+[ext_resource type="Texture2D" uid="uid://b80kkqqvkc3xp" path="res://Assets/Entities/squirrel/Idle.png" id="2_og7ce"]
 [ext_resource type="Texture2D" uid="uid://dwh85w1m27du4" path="res://icon.svg" id="2_wcm23"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cglru"]
-size = Vector2(88, 111)
+size = Vector2(104, 210)
+
+[sub_resource type="Animation" id="Animation_fbfyk"]
+resource_name = "Idle"
+length = 0.6
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_2coxh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pkvgq"]
+_data = {
+"Idle": SubResource("Animation_fbfyk"),
+"RESET": SubResource("Animation_2coxh")
+}
 
 [node name="Squirrel" type="Node2D"]
 y_sort_enabled = true
 script = ExtResource("1_7tehb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ry3o4")
+texture = ExtResource("2_og7ce")
+hframes = 7
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2(-1, 23)
 shape = SubResource("RectangleShape2D_cglru")
 
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(-40, -36)
-scale = Vector2(0.632812, 0.734375)
+position = Vector2(-49, -81)
+scale = Vector2(0.773438, 1.63281)
 texture_normal = ExtResource("2_wcm23")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -33.0
-offset_top = -81.0
-offset_right = 36.0
-offset_bottom = -58.0
+offset_left = -49.0
+offset_top = -112.0
+offset_right = 49.0
+offset_bottom = -81.0
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
-offset_left = -41.0
-offset_top = -58.0
-offset_right = 45.0
-offset_bottom = 67.0
+offset_left = -49.0
+offset_top = -81.0
+offset_right = 49.0
+offset_bottom = 128.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_pkvgq")
+}
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

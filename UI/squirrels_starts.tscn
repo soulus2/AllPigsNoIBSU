@@ -1,0 +1,377 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4l2cutwqbln8"]
+
+[ext_resource type="Script" path="res://UI/squirrels_starts.gd" id="1_i4fep"]
+[ext_resource type="PackedScene" uid="uid://b63wfhl3jx7u3" path="res://UI/screen_container.tscn" id="2_xapnf"]
+[ext_resource type="Theme" uid="uid://ut3jn0rah5yo" path="res://Assets/Themes/main_theme.tres" id="3_3v3is"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okyjl"]
+bg_color = Color(0, 0, 0, 0.196078)
+
+[node name="Squirrles_starts" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i4fep")
+
+[node name="Screen_container" parent="." instance=ExtResource("2_xapnf")]
+layout_mode = 0
+
+[node name="background" type="Button" parent="Screen_container"]
+layout_mode = 2
+theme = ExtResource("3_3v3is")
+theme_override_styles/focus = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/hover = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_okyjl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_okyjl")
+
+[node name="MarginContainer" type="MarginContainer" parent="Screen_container"]
+layout_mode = 2
+mouse_filter = 2
+theme = ExtResource("3_3v3is")
+
+[node name="Panel" type="Panel" parent="Screen_container/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("3_3v3is")
+
+[node name="MarginContainer" type="MarginContainer" parent="Screen_container/MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Screen_container/MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Big_numbers" type="VBoxContainer" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Total" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/Big_numbers"]
+layout_mode = 2
+
+[node name="Max" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/Big_numbers"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_3v3is")
+
+[node name="Evolutions" type="VBoxContainer" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("3_3v3is")
+alignment = 1
+
+[node name="Evolution_0" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_1" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_2" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_3" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_4" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_5" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_6" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_7" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_8" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_9" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_10" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_11" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_12" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_13" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_14" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_15" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_16" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_17" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_18" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_19" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_20" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_21" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_22" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_23" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_24" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_25" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_26" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_27" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_28" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_29" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_30" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_31" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_32" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_33" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_34" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_35" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_36" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_37" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_38" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_39" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_40" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_41" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_42" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_43" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_44" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_45" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_46" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_47" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_48" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_49" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_50" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_51" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_52" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_53" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_54" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_55" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_56" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_57" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_58" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_59" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_60" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_61" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_62" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_63" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_64" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_65" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_66" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_67" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_68" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_69" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_70" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_71" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_72" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_73" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_74" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_75" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_76" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_77" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_78" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_79" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_80" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_81" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_82" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_83" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_84" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_85" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_86" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_87" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_88" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_89" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_90" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_91" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_92" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_93" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_94" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_95" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_96" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_97" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_98" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[node name="Evolution_99" type="Label" parent="Screen_container/MarginContainer/MarginContainer/VBoxContainer/ScrollContainer/Evolutions"]
+layout_mode = 2
+
+[connection signal="pressed" from="Screen_container/background" to="." method="_on_background_pressed"]

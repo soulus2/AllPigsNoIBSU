@@ -4,6 +4,9 @@ extends Node2D
 var isDragging:bool=false
 @export var evolutionLevel:int=0
 
+#<><><>Added by Soulus<><><>
+@export var do_head_count:bool=true
+#<><><><><><><><><><><><><><
 
 
 #this function does not work for now
@@ -22,27 +25,29 @@ func checkCollision()->void:
 	
 	if nearestArea.area != null:
 		
-		#<><><>Added By Soulus<><><>
-		GlobalStats.evolutions_amount[evolutionLevel]-=2
-		GlobalStats.evolutions_amount[evolutionLevel+1]+=1
-		GlobalStats.total_squirrle_amout-=1
-		#<><><><><><><><><><><><><><
-		
 		evolutionLevel+=1
 		
-		#<><><>Added By Soulus<><><>
-		GlobalStats.temp_evolution=evolutionLevel
+		#<><><>Added by Soulus<><><>
+		GlobalStats.dec_evolution_amounts(evolutionLevel-1,2)
+		GlobalStats.inc_evolution_amounts(evolutionLevel)
+		GlobalStats.dec_total_squirrle_amout()
 		#<><><><><><><><><><><><><><
-		
 		changeLabelText(evolutionLevel)
 		nearestArea.area.get_parent().queue_free()
 
 func _ready() -> void:
-	#<><><>Added By Soulus<><><>
 	changeLabelText(evolutionLevel)
+	#<><><>Added by Soulus<><><>
+	play_idle_animation()
+	if do_head_count:
+		GlobalStats.inc_evolution_amounts(evolutionLevel)
+		GlobalStats.inc_total_squirrle_amout()
 	#<><><><><><><><><><><><><><
-	GlobalStats.total_squirrle_amout+=1
-	GlobalStats.evolutions_amount[evolutionLevel]+=1
+
+#<><><>Added By Soulus<><><>
+func play_idle_animation():
+	$AnimationPlayer.play("Idle")
+#<><><><><><><><><><><><><><
 
 func changeLabelText(text:int)->void:
 	$Label.text = "Evolution Level %d" % text

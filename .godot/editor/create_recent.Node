@@ -1,6 +1,7 @@
+VBoxContainer
+AnimationPlayer
 TextureRect
 Label
-VBoxContainer
 Button
 ScrollContainer
 VScrollBar
@@ -11,4 +12,3 @@ Container
 Control
 CenterContainer
 ColorRect
-CharacterBody2D
