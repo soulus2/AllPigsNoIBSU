@@ -35,8 +35,6 @@ func checkSquirrelCollision()->void:
 			nearestArea = {area = area, distance = currentDistance}
 	
 	if nearestArea.area != null:
-<<<<<<< HEAD
-		
 		evolutionLevel+=1
 		
 		#<><><>Added by Soulus<><><>
@@ -46,13 +44,6 @@ func checkSquirrelCollision()->void:
 		#<><><><><><><><><><><><><><
 		changeLabelText(evolutionLevel)
 		nearestArea.area.get_parent().queue_free()
-=======
-		var otherSquirrel:Squirrel = nearestArea.area.get_parent()
-		otherSquirrel.queue_free()
-		setGlobalVars()
-		evolve()
-
->>>>>>> origin/main
 
 func _ready() -> void:
 	changeLabelText(evolutionLevel)
