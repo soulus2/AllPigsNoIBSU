@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://UI/background.gd
 res://UI/game_test.gd
 res://Global/Global_stats.gd
@@ -20,3 +21,7 @@ res://UI/options.tscn
 res://UI/options.gd
 res://Global/save_load.gd
 res://Global/global_stats.gd
+=======
+res://UI/Main.tscn
+res://UI/game_test.gd
+>>>>>>> Stashed changes

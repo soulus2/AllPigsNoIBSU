@@ -24,6 +24,10 @@ func _ready() -> void:
 func squirrel_setup(squirrel:Node2D):
 	squirrel.evolutionLevel = squirrel_level
 	squirrel.position = Vector2(randi_range(100,get_viewport_rect().size.x-100), randi_range(100,get_viewport_rect().size.y-100))
+<<<<<<< Updated upstream
+=======
+	
+>>>>>>> Stashed changes
 func squirrel_setup_no_head_count(squirrel:Node2D):
 	squirrel.evolutionLevel = squirrel_level
 	squirrel.position = Vector2(randi_range(100,get_viewport_rect().size.x-100), randi_range(100,get_viewport_rect().size.y-100))
