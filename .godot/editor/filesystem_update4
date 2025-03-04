@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://UI/background.gd
 res://UI/game_test.gd
 res://Global/Global_stats.gd
@@ -7,11 +8,14 @@ res://UI/navbar.gd
 res://UI/screen_container.gd
 res://Entities/squirrel.gd
 res://UI/squirrels_starts.gd
+=======
+>>>>>>> origin/main
 res://UI/Main.tscn
 res://Assets/Themes/main_theme.tres
 res://Entities/squirrel.tscn
 res://UI/game_test.tscn
 res://UI/main_menu.tscn
+<<<<<<< HEAD
 res://UI/squirrels_starts.tscn
 res://UI/navbar.tscn
 res://UI/background.tscn
@@ -20,3 +24,16 @@ res://UI/options.tscn
 res://UI/options.gd
 res://Global/save_load.gd
 res://Global/global_stats.gd
+=======
+res://UI/squirrles_starts.tscn
+res://UI/navbar.tscn
+res://UI/background.tscn
+res://Entities/squirrel.gd
+res://Components/Pickup/pickup_component.gd
+res://Components/Pickup/pickup_component.tscn
+res://Objects/Acorn/normal_acorn.tscn
+res://Objects/Acorn/acorn.gd
+res://UI/game_test.gd
+res://Components/AcornDrop/acorn_drop_component.gd
+res://Components/AcornDrop/acorn_drop_component.tscn
+>>>>>>> origin/main

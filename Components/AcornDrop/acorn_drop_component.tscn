@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd3lpepluu5ny"]
+
+[ext_resource type="Script" path="res://Components/AcornDrop/acorn_drop_component.gd" id="1_4na8m"]
+
+[node name="AcornDropComponent" type="Node2D"]
+script = ExtResource("1_4na8m")

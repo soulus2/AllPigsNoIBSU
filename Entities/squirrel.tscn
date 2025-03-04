@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=3 uid="uid://b8gk4pn8pg3im"]
 
 [ext_resource type="Script" path="res://Entities/squirrel.gd" id="1_7tehb"]
 [ext_resource type="Texture2D" uid="uid://b80kkqqvkc3xp" path="res://Assets/Entities/squirrel/Idle.png" id="2_og7ce"]
 [ext_resource type="Texture2D" uid="uid://dwh85w1m27du4" path="res://icon.svg" id="2_wcm23"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://b8gk4pn8pg3im"]
+
+[ext_resource type="Script" path="res://Entities/squirrel.gd" id="1_7tehb"]
+[ext_resource type="Texture2D" uid="uid://cmyyiwmtj4mvr" path="res://Assets/Entities/squirrle_test.png" id="1_ry3o4"]
+>>>>>>> origin/main
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cglru"]
 size = Vector2(104, 210)
@@ -61,12 +68,15 @@ visible = false
 position = Vector2(-1, 23)
 shape = SubResource("RectangleShape2D_cglru")
 
+<<<<<<< HEAD
 [node name="TouchScreenButton" type="TouchScreenButton" parent="."]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(-49, -81)
 scale = Vector2(0.773438, 1.63281)
 texture_normal = ExtResource("2_wcm23")
 
+=======
+>>>>>>> origin/main
 [node name="Label" type="Label" parent="."]
 offset_left = -49.0
 offset_top = -112.0
