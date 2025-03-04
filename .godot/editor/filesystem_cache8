@@ -1,5 +1,6 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ::res://::1741106048
 export_presets.cfg::TextFile::-1::1740319262::0::1::::<><>::
 icon.svg::CompressedTexture2D::8719925686234060289::1740301080::1740301097::1::::<><>::
@@ -55,6 +56,8 @@ screen_container.tscn::PackedScene::4621422502337625548::1741106396::0::1::::<><
 squirrels_starts.gd::GDScript::-1::1741106354::0::1::::<>Control<>::
 squirrels_starts.tscn::PackedScene::6832669999415603087::1741106395::0::1::::<><>::res://UI/squirrels_starts.gd<>uid://b63wfhl3jx7u3::::res://UI/screen_container.tscn<>uid://ut3jn0rah5yo::::res://Assets/Themes/main_theme.tres
 =======
+=======
+>>>>>>> Stashed changes
 ::res://::1741115115
 export_presets.cfg::TextFile::-1::1741115103::0::1::::<><>::
 icon.svg::CompressedTexture2D::8719925686234060289::1741115103::1741115116::1::::<><>::
@@ -121,4 +124,7 @@ screen_container.tscn::PackedScene::4621422502337625548::1741115103::0::1::::<><
 squirrels_starts.gd::GDScript::-1::1741115103::0::1::::<>Control<>::
 squirrels_starts.tscn::PackedScene::6832669999415603087::1741115103::0::1::::<><>::res://UI/squirrels_starts.gd<>uid://b63wfhl3jx7u3::::res://UI/screen_container.tscn<>uid://ut3jn0rah5yo::::res://Assets/Themes/main_theme.tres
 squirrles_starts.tscn::PackedScene::6832669999415603087::1741115103::0::1::::<><>::uid://b63wfhl3jx7u3::::res://UI/screen_conteiner.tscn<>res://UI/squirrles_starts.gd<>uid://ut3jn0rah5yo::::res://Assets/Themes/main_theme.tres
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
