@@ -12,6 +12,7 @@ config_version=5
 
 config/name="AllPigsNoIBSU"
 run/main_scene="res://UI/Main.tscn"
+config/use_custom_user_dir=true
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
@@ -23,7 +24,8 @@ driver/emulate_touch_from_mouse=false
 
 SceneManager="*res://Global/scene_manager.gd"
 GlobalEventListener="*res://Global/global_event_listener.gd"
-GlobalStats="*res://Global/Global_stats.gd"
+GlobalStats="*res://Global/global_stats.gd"
+SaveLoad="*res://Global/save_load.gd"
 
 [debug]
 

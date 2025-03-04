@@ -4,7 +4,7 @@ extends Control
 @export var main_menu_scene:PackedScene = preload("res://UI/main_menu.tscn") 
 @export var game_scene:PackedScene = preload("res://UI/game_test.tscn")
 @export var navbar_scene:PackedScene = preload("res://UI/navbar.tscn")
-@export var Squirrles_starts_scene:PackedScene = preload("res://UI/squirrles_starts.tscn")
+@export var Squirrles_starts_scene:PackedScene = preload("res://UI/squirrels_starts.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SceneManager.load_scene(self,main_menu_scene)

@@ -4,6 +4,9 @@ class_name Squirrel
 var isDragging:bool=false
 @export var evolutionLevel:int=0
 
+#<><><>Added by Soulus<><><>
+@export var do_head_count:bool=true
+#<><><><><><><><><><><><><><
 
 func checkEvolutionCompatability(node:Node2D) -> bool: 
 	if node == null: 
@@ -32,18 +35,38 @@ func checkSquirrelCollision()->void:
 			nearestArea = {area = area, distance = currentDistance}
 	
 	if nearestArea.area != null:
+<<<<<<< HEAD
+		
+		evolutionLevel+=1
+		
+		#<><><>Added by Soulus<><><>
+		GlobalStats.dec_evolution_amounts(evolutionLevel-1,2)
+		GlobalStats.inc_evolution_amounts(evolutionLevel)
+		GlobalStats.dec_total_squirrle_amout()
+		#<><><><><><><><><><><><><><
+		changeLabelText(evolutionLevel)
+		nearestArea.area.get_parent().queue_free()
+=======
 		var otherSquirrel:Squirrel = nearestArea.area.get_parent()
 		otherSquirrel.queue_free()
 		setGlobalVars()
 		evolve()
 
+>>>>>>> origin/main
 
 func _ready() -> void:
-	#<><><>Added By Soulus<><><>
 	changeLabelText(evolutionLevel)
+	#<><><>Added by Soulus<><><>
+	play_idle_animation()
+	if do_head_count:
+		GlobalStats.inc_evolution_amounts(evolutionLevel)
+		GlobalStats.inc_total_squirrle_amout()
 	#<><><><><><><><><><><><><><
-	GlobalStats.total_squirrle_amout+=1
-	GlobalStats.evolutions_amount[evolutionLevel]+=1
+
+#<><><>Added By Soulus<><><>
+func play_idle_animation():
+	$AnimationPlayer.play("Idle")
+#<><><><><><><><><><><><><><
 
 func changeLabelText(text:int)->void:
 	$Label.text = "Evolution Level %d" % text
