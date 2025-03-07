@@ -10,4 +10,4 @@ func _process(delta: float) -> void:
 	pass
 	
 func dropAcorn() -> void:
-	pass
+	GlobalEventListener.emit_signal("drop_acorn", "acorns")

@@ -1,14 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8gk4pn8pg3im"]
+[gd_scene load_steps=6 format=3 uid="uid://b8gk4pn8pg3im"]
 
 [ext_resource type="Script" path="res://Entities/squirrel.gd" id="1_7tehb"]
 [ext_resource type="Texture2D" uid="uid://cmyyiwmtj4mvr" path="res://Assets/Entities/squirrle_test.png" id="1_ry3o4"]
+[ext_resource type="PackedScene" uid="uid://bd3lpepluu5ny" path="res://Components/AcornDrop/acorn_drop_component.tscn" id="3_wsemr"]
+[ext_resource type="PackedScene" uid="uid://c7xllhgktxn3t" path="res://Components/InBoundsCheck/in_bounds_check_component.tscn" id="4_6xwah"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cglru"]
 size = Vector2(88, 111)
 
-[node name="Squirrel" type="Node2D"]
+[node name="Squirrel" type="Node2D" node_paths=PackedStringArray("acornDropComponent", "inBoundsCheckComponent")]
 y_sort_enabled = true
 script = ExtResource("1_7tehb")
+acornDropComponent = NodePath("AcornDropComponent")
+inBoundsCheckComponent = NodePath("InBoundCheckComponent")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ry3o4")
@@ -30,6 +34,11 @@ offset_left = -41.0
 offset_top = -58.0
 offset_right = 45.0
 offset_bottom = 67.0
+
+[node name="AcornDropComponent" parent="." instance=ExtResource("3_wsemr")]
+
+[node name="InBoundCheckComponent" parent="." instance=ExtResource("4_6xwah")]
+offset = Vector2(100, 100)
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]

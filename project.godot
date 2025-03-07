@@ -24,6 +24,8 @@ driver/emulate_touch_from_mouse=false
 SceneManager="*res://Global/scene_manager.gd"
 GlobalEventListener="*res://Global/global_event_listener.gd"
 GlobalStats="*res://Global/Global_stats.gd"
+GlobalVariables="*res://Global/global_variables.gd"
+GlobalFunctions="*res://Global/global_functions.gd"
 
 [debug]
 

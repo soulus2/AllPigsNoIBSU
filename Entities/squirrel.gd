@@ -3,8 +3,8 @@ extends Node2D
 class_name Squirrel
 var isDragging:bool=false
 @export var evolutionLevel:int=0
-
-
+@export var acornDropComponent:AcornDropComponent
+@export var inBoundsCheckComponent:InBoundsCheckComponent
 func checkEvolutionCompatability(node:Node2D) -> bool: 
 	if node == null: 
 		return false
@@ -16,7 +16,9 @@ func setGlobalVars()->void:
 	GlobalStats.total_squirrle_amout-=1
 	#<><><><><><><><><><><><><><>
 
+	
 func evolve()->void: 
+	acornDropComponent.dropAcorn()
 	evolutionLevel+=1
 	changeLabelText(evolutionLevel)
 
@@ -62,4 +64,5 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	checkSquirrelCollision()
+	inBoundsCheckComponent.isOutOfBounds()
 	isDragging=false
