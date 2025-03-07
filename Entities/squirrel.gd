@@ -3,7 +3,7 @@ extends Node2D
 class_name Squirrel
 var isDragging:bool=false
 @export var evolutionLevel:int=0
-
+@export var inBoundsCheckComponent:InBoundsCheckComponent
 #<><><>Added by Soulus<><><>
 @export var do_head_count:bool=true
 #<><><><><><><><><><><><><><
@@ -76,4 +76,5 @@ func _on_button_button_down() -> void:
 
 func _on_button_button_up() -> void:
 	checkSquirrelCollision()
+	inBoundsCheckComponent.checkOutOfBounds()
 	isDragging=false

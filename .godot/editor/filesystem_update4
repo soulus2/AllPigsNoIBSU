@@ -1,4 +1,10 @@
 res://UI/Main.tscn
-res://UI/game_test.gd
-res://Entities/squirrel.gd
+res://Assets/Themes/main_theme.tres
 res://Entities/squirrel.tscn
+res://UI/navbar.tscn
+res://Entities/squirrel.gd
+res://Components/InBoundsCheck/in_bounds_check_component.gd
+res://Components/InBoundsCheck/in_bounds_check_component.tscn
+res://Objects/Acorn/normal_acorn.tscn
+res://UI/options.tscn
+res://UI/game_test.tscn

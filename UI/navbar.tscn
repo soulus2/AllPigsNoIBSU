@@ -22,15 +22,15 @@ script = ExtResource("1_sg384")
 
 [node name="Background_color" parent="." node_paths=PackedStringArray("foreground_node") instance=ExtResource("3_yhrax")]
 layout_mode = 2
-offset_top = 1138.0
-offset_right = 1957.0
-offset_bottom = 1204.0
+offset_right = 522.0
+offset_bottom = 66.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_kjero")
 foreground_node = NodePath("../Screen_container/VBoxContainer/HBoxContainer")
 
 [node name="Screen_container" parent="." instance=ExtResource("1_agia4")]
 layout_mode = 0
-offset_bottom = 1204.0
+offset_right = 2.0
+offset_bottom = 2.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Screen_container"]
 layout_mode = 2

@@ -26,6 +26,7 @@ SceneManager="*res://Global/scene_manager.gd"
 GlobalEventListener="*res://Global/global_event_listener.gd"
 GlobalStats="*res://Global/global_stats.gd"
 SaveLoad="*res://Global/save_load.gd"
+GlobalFunctions="*res://Global/global_functions.gd"
 
 [debug]
 

@@ -18,6 +18,8 @@ script = ExtResource("1_j7y4c")
 
 [node name="Screen_container" parent="." instance=ExtResource("1_nvln0")]
 layout_mode = 0
+offset_right = 1356.0
+offset_bottom = 632.0
 
 [node name="background" type="Button" parent="Screen_container"]
 layout_mode = 2

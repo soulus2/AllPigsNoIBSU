@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7xllhgktxn3t"]
+
+[ext_resource type="Script" path="res://Components/InBoundsCheck/in_bounds_check_component.gd" id="1_xaikp"]
+
+[node name="InBoundsCheckComponent" type="Node2D"]
+script = ExtResource("1_xaikp")
